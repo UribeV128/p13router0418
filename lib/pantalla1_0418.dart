@@ -1,4 +1,3 @@
-//Pantalla1_0418
 import 'package:flutter/material.dart';
 
 class Pantalla1_0418 extends StatelessWidget {
@@ -9,19 +8,48 @@ class Pantalla1_0418 extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Pantalla1 Uribe0418"),
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Color(0xffc4a5f4),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text("Pantalla"),
+              Container(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Vivian Uribe Mendoza ',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color(0xff3e225c),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.topCenter,
+                child: Container(
+                  margin: EdgeInsets.only(top: 20),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      color: Color(0xffb996df),
+                      width: 10,
+                    ),
+                  ),
+                  width: 280,
+                  height: 280,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'V',
+                    style: TextStyle(
+                      fontSize: 180,
+                      color: Color(0xff633a90),
+                    ),
+                  ),
+                ),
               ),
               Container(
                 padding: const EdgeInsets.all(16.0),
-                child: const Text("Vivian Uribe"),
+                child: const Text("Aterrizaje Mat.21308051280418"),
               )
             ],
           ),
